@@ -21,7 +21,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:17001/api/register";
+      const url = "https://password-reset-rm05.onrender.com/api/register";
       const { data: res } = await axios.post(url, data);
       setMsg(res.message)
       navigate("/");

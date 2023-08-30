@@ -13,7 +13,7 @@ const PasswordReset = () => {
   const param = useParams();
   const navigate = useNavigate();
 
-  const url = `http://localhost:17001/api/password-reset/${param.id}/${param.token}`;
+  const url = `https://password-reset-rm05.onrender.com/api/password-reset/${param.id}/${param.token}`;
 
   useEffect(() => {
     const verifyUrl = async () => {

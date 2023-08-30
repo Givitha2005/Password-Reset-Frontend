@@ -19,7 +19,7 @@ const Signin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:17001/api/signin";
+      const url = "https://password-reset-rm05.onrender.com/api/signin";
       const { data: res } = await axios.post(url, data);
       localStorage.setItem("token", res.data);
       navigate("/home");
